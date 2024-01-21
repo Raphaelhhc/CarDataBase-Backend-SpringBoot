@@ -1,10 +1,3 @@
-# REST API for Car Database
-
-Java Spring Boot back-end web application that exposes REST API for CRUD operations of car database application.
-
-For project front-end repository go to [https://github.com/Raphaelhhc/CarDataBase-FrontEnd-TypeScript](https://github.com/Raphaelhhc/CarDataBase-FrontEnd-TypeScript)
-
-
 ## Technology Stack
 
 - Java: Programming Language
@@ -32,41 +25,3 @@ For project front-end repository go to [https://github.com/Raphaelhhc/CarDataBas
 | `DELETE /api/secure/admin/delete/car?carId=<carId>`                    | Delete the car from database                                                      | Yes    | Admin                |
 
 
-## Start the Application
-
-### 1. Prerequisites
-
-Make sure you have the following prerequisites installed on your machine:
-
-- Java Development Kit (JDK) 17 or higher
-
-- Apache Maven
-
-### 2. Clone the repository
-```
-git clone https://github.com/Raphaelhhc/CarDataBase-Backend-SpringBoot
-```
-
-### 3. Navigate to the project directory and build the project using Maven
-```
-cd CarDataBase-Backend-SpringBoot
-mvn clean install
-```
-
-### 4. Modify the application.properties to provide the environment variables
-```
-spring.datasource.url=${DB_URL}
-spring.datasource.username=${DB_USERNAME}
-spring.datasource.password=${DB_PASSWORD}
-
-okta.oauth2.clientId=${OKTA_ID}
-okta.oauth2.issuer=${OKTA_ISSUER}
-```
-* If no OKTA account: refer to [https://developer.okta.com/](https://developer.okta.com/) to create and build application to manage user/admin account.
-
-### 5. Run the application
-```
-mvn spring-boot:run
-```
-
-### 6. Access the application http://localhost:8080/ + API Endpoints
